@@ -55,13 +55,13 @@ rsparams = po.HMMparams(features, n_states);
 # Conduct portfolio backtests
 #-------------------------------------------------------------------------------
 """
-models: List of optimization models to compare. Choose between:
-- mvo (mean-variance portfolio with a target return)
-- minvar (minimum variance portfolio)
-- rp (risk parity portfolio)
-- rsmvo (regime-switching mean-variance portfolio)
-- rsminvar (regime-switching minimum variance portfolio)
-- rsrp (regime-switching risk parity portfolio)
+models: List of optimization models to compare. Choose between
+- mvo: mean-variance portfolio with a target return
+- minvar: minimum variance portfolio
+- rp: risk parity portfolio
+- rsmvo: regime-switching mean-variance portfolio
+- rsminvar: regime-switching minimum variance portfolio
+- rsrp: regime-switching risk parity portfolio
 
 constraints: List of constraints to be used in the optimization models. 
     Note: Currently, only the 'longonly' constraint is available. Removing this
