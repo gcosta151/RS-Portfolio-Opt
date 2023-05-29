@@ -17,12 +17,12 @@ The work in these two papers presents a Markov regime-switching factor model to 
 This repository contains all the files used to necessary to run the numerical experiments of the regime-switching portfolio optimization framework. To run the experiments. please refer to the main.jl file. Anyone wishing to make any changes to the models do so by tinkering with a copy of the code base. The code base is made up of the following files:
 - dataload/DataLoad.jl: Module to download data from [Kenneth French's data library](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html). Use this module to download returns of the Fama-French three-factor model, as well as the Industry Portfolios to serve as the historical asset returns. 
 - optimization/PortfolioOptimization.jl: Module to construct optimal nominal and regime-switching portfolios. Six portfolio optimization models are currently available for use:
- - mvo: Nominal mean-variance optimization
- - rsmvo: Regime-switching mean variance optimization
- - minvar: Nominal minimum variance optimization
- - rsminvar: Regime-switching minimum variance optimization
- - rp: Risk parity portfolio optimization
- - rsrp: Regime-switching risk parity portfolio optimization.
+   - mvo: Nominal mean-variance optimization
+   - rsmvo: Regime-switching mean variance optimization
+   - minvar: Nominal minimum variance optimization
+   - rsminvar: Regime-switching minimum variance optimization
+   - rp: Risk parity portfolio optimization
+   - rsrp: Regime-switching risk parity portfolio optimization.
 - optimization/Optimization.jl: Supporting script called by the PortfolioOptimization.jl module. This script contains the JuMP-based optimization models.
 - optimization/HiddenMarkovModel.jl: Supporting script called by the PortfolioOptimization.jl module. This script contains an implementation of the Baum-Welch algorithm to fit a hidden Markov model to the factor returns. 
 - optimization/FactorModels.jl: Supporting script called by the PortfolioOptimization.jl module. This script contains an implementation of linear regression under a single regime, as well as under the assumption of multiple regimes. 
