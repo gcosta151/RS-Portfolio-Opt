@@ -1,4 +1,4 @@
-# Portfolio Optimization under a Markov Regime-Switching Framework #
+## Portfolio Optimization under a Markov Regime-Switching Framework ##
  This repository contains the source code to conduct numerical experiments similar to those presented in the following two papers:
  - [Costa, G. and Kwon, R. H. (2019). Risk parity portfolio optimization under a Markov regime-switching framework. Quantitative Finance, 19(3), 453-47](https://www.tandfonline.com/doi/abs/10.1080/14697688.2018.1486036?journalCode=rquf20)
     - [Link to PDF](https://www.researchgate.net/profile/Giorgio-Costa-2/publication/326756996_Risk_parity_portfolio_optimization_under_a_Markov_regime-switching_framework/links/5e0992d74585159aa4a47d19/Risk-parity-portfolio-optimization-under-a-Markov-regime-switching-framework.pdf)
@@ -27,7 +27,7 @@ This repository contains all the files used to necessary to run the numerical ex
 - optimization/HiddenMarkovModel.jl: Supporting script called by the PortfolioOptimization.jl module. This script contains an implementation of the Baum-Welch algorithm to fit a hidden Markov model to the factor returns. 
 - optimization/FactorModels.jl: Supporting script called by the PortfolioOptimization.jl module. This script contains an implementation of linear regression under a single regime, as well as under the assumption of multiple regimes. 
 
-# Licensing
+## Licensing ##
 Unless otherwise stated, the source code is copyright of Giorgio Costa and licensed under the Apache 2.0 License.
 
 
