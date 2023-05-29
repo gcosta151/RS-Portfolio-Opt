@@ -9,12 +9,10 @@
 using Distributions, TimeSeries, Statistics, LinearAlgebra, Plots
 plotlyjs() # Use the PlotlyJS backend
 
-using Revise
-
-Revise.includet("dataload/DataLoad.jl")
+include("dataload/DataLoad.jl")
 import .DataLoad as dl
 
-Revise.includet("optimization/PortfolioOptimization.jl")
+include("optimization/PortfolioOptimization.jl")
 import .PortfolioOptimization as po
 
 #-------------------------------------------------------------------------------
