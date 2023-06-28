@@ -128,7 +128,7 @@ struct Portfolio
             lback = lookback
         elseif data.freq == "weekly"
             # There are approximately 4.33 weeks per month
-            lback = Int64(lookback * 4.33)
+            lback = Int64(round(lookback * 4.33))
         elseif data.freq == "daily"
             # There are approximately 21 trading days per month
             lback = lookback * 21

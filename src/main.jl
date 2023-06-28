@@ -39,7 +39,7 @@ Load historical data from Kenneth French's website (Fama-French data)
     - 49_Industry_Portfolios
 Frequency can be specified as: daily, weekly or monthly
 """
-data = dl.Data("30_Industry_Portfolios", daterange, calibration, "monthly");
+data = dl.Data("30_Industry_Portfolios", daterange, calibration, "weekly");
 
 """
 Assign the parameters to be used in the regime-switching models 
