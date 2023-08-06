@@ -14,7 +14,7 @@ The work in these two papers pertains to a Markov regime-switching factor model 
 - TimeSeries.jl v0.23
 
 ## Usage ##
-This repository contains all the files used to necessary to run the numerical experiments of the regime-switching portfolio optimization framework. To run the experiments. please refer to the main.jl file. Anyone wishing to make any changes to the models do so by tinkering with a copy of the code base. The code base is made up of the following files:
+This repository contains all the files used to necessary to run the numerical experiments of the regime-switching portfolio optimization framework. To run the experiments. please refer to the main.jl file. Anyone wishing to make any changes to the models can do so by tinkering with a copy of the code base. The code base is made up of the following files:
 - dataload/DataLoad.jl: Module to download data from [Kenneth French's data library](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html). Use this module to download returns of the Fama-French three-factor model, as well as the Industry Portfolios to serve as the historical asset returns. 
 - optimization/PortfolioOptimization.jl: Module to construct optimal nominal and regime-switching portfolios. Six portfolio optimization models are currently available for use:
    - mvo: Nominal mean-variance optimization
