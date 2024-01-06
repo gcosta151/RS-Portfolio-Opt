@@ -88,8 +88,16 @@ wealth = hcat([portfolios[i].wealth for i in 1:length(models)]...);
 sharpe = hcat([portfolios[i].stats.roll_sharpe for i in 1:length(models)]...);
 
 # Plot the wealth evolution and rolling Sharpe ratios of all portfolios
-plot(wealth, title="Wealth evolution", linewidth=1.5, xrotation = 45, ylabel="Portfolio wealth")
-plot(sharpe, title="Rolling Sharpe ratio", linewidth=1.5, xrotation = 45, ylabel="Portfolio Sharpe ratio")
+plot(wealth, 
+        title="Wealth evolution", 
+        linewidth=1.5, 
+        xrotation = 45, 
+        ylabel="Portfolio wealth")
+plot(sharpe, 
+        title="Rolling Sharpe ratio", 
+        linewidth=1.5, 
+        xrotation = 45, 
+        ylabel="Portfolio Sharpe ratio")
 
 ################################################################################
 # End
